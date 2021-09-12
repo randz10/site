@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.wrapper {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/******************* Header *******************/
+
+.header {
+    background: 50% 85% / cover no-repeat url(../img/main-img.jpeg);
+}
+.header-top {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header__container {
+    padding-top: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 650px;
+}
+
+.header-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+.header__title {
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+.header__description{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.header__btn {
+    padding-top: 70px;
+}
+
+.btn__link {
+    padding: 15px 35px;
+    background-color: #12c757;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn-white {
+    color: #000;
+    background-color: #fff ;
+}
+
+
+
+
+.logo__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__inner a, span{
+    font-family: 'Times New Roman';
+    letter-spacing: 2px;
+}
+.header__logo {
+    font-size: 35px;
+    color:#fff;
+    font-weight: 700;
+    
+}
+.logo__item {
+    color:#fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.logo__item span {
+    font-size: 11px;
+}
+
+.header__nav {
+
+    
+}
+.nav {
+   
+}
+.nav__list {
+    display: flex;
+    
+}
+.nav__item {
+    margin-left: 40px;
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+.main-page {
+    flex: 1 0 auto;
+}
+.main-page__container {
+    
+}
+.page__title {
+    padding: 35px 0px 15px 0px;
+    font-size: 21px;
+    text-align: center;
+}
+.page__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page__column {
+    flex: 0 1 50%;
+    padding: 25px 0px 25px 20px;
+    
+}
+.column-row {
+    display: flex;
+}
+
+.column__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    padding-right: 20px;
+}
+
+.column__img img {
+    
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.column__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.column__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+}
+
+
+.column__title a {
+    border-bottom: 1px solid black;
+    color: #d19916;
+    font-family: 'Times New Roman';
+    transition: .2s linear;
+}
+.column__title a:hover {
+    color: rgb(144, 104, 11);
+}
+.column__text {
+    line-height: 27px;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+.footer__content {
+    color: #fff;
+    padding: 25px 0;
+    background-color: #333333;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer___text {
+
+    
+}
+
+.page-contact {
+    background-color: #f7f7f7;
+}
+.page-contact__container {
+    height: 100vh;
+    padding: 120px 0px;
+}
+.page-contact__title {
+    font-family: Merriweather;
+    font-size: 60px;
+}
+.page-contact__information {
+}
+
+@media (max-width:1140px) {
+    .header__container {
+        max-width: none;
+    }
+    .header__title {
+        font-size: calc(40px + (72 - 40) * ((100vw - 320px) / (1140 - 320)));
+    }
+    .header__description {
+        text-align: left;
+        font-weight: 400;
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1140 - 320)));
+    }
+    .header__btn {
+        
+    }
+    .btn__link {
+        font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1140 - 320)));
+    }
+}
+
+@media (max-width:994px) {
+    .column-row {
+        flex-wrap: wrap;
+    }
+    .column__img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width:590px) {
+    .column-row {
+       justify-content: center;
+    }
+    .column__img img {
+        width: 250px;
+    }
+    .page__column {
+        text-align: center;
+        flex: 0 1 100%;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .nav__item {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav__list {
+        flex-direction: column;
+    }
+    .nav__item {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-height: 1025px) {
+    .header-body {
+        justify-content: center;
+    }
+}
+
