@@ -296,6 +296,9 @@ html {
     .nav__item {
         margin-bottom: 5px;
     }
+    .footer__container {
+        flex-direction: column;
+    }
 }
 
 @media (max-height: 1025px) {
